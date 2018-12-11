@@ -1,6 +1,6 @@
 {
 	"name": "gulp-pkg-json-cleanse",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "Gulp pluggin to cleanse packge.json properties",
 	"license": "MIT",
 	"repository": "https://github.com/shadowboxdev/gulp-pkg-json-cleanse",
