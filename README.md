@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/shadowboxdev/gulp-pkg-json-cleanse.svg?branch=master)](https://travis-ci.com/shadowboxdev/gulp-pkg-json-cleanse)
+
 # gulp-pkg-json-cleanse
 
 Remove properties from the source __package.json__ file for production.
