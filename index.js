@@ -22,9 +22,9 @@ module.exports = options => {
 			options.remove.forEach(opt => {
 				delete pkgData[opt];
 			});
-			console.log(pkgData.toString());
 
 			file.contents = Buffer.from(JSON.stringify(pkgData, null, 4));
+
 			this.push(file);
 		} catch (err) {
 			this.emit('error', new PluginError('gulp-pkg-json-cleanse', err));
