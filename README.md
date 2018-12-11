@@ -28,9 +28,11 @@ options
 }
 ```
 
-gulpfile.js
+gulpfile
 
-```
+```javascript
+const pkgcleanse = require('gulp-pkg-json-cleanse');
+
 gulp.task('cleanse-pkgjson', () => {
   return gulp.src('package.json')
     .pipe(pkgcleanse({
@@ -38,7 +40,7 @@ gulp.task('cleanse-pkgjson', () => {
         'devDependencies'
       ]
     }))
-    .pipe(gulp.dest(PROD_DEST));
+    .pipe(gulp.dest('./dist'));
 });
 ```
 
