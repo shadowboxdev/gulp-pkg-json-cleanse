@@ -24,7 +24,5 @@ test(async t => {
 
 	const file = await promise;
 
-	console.log('here', file.contents.toString('utf8'));
-
 	t.is(file.contents.toString('utf8'), pkgJsonStr);
 });
