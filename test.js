@@ -6,7 +6,7 @@ import fn from '.';
 
 const pkgJsonPath = path.resolve(__dirname, 'test-data/package.json');
 const pkgJsonData = require(pkgJsonPath);
-const pkgJsonStr = JSON.stringify(pkgJsonData);
+const pkgJsonStr = JSON.stringify(pkgJsonData, null, 4);
 
 test(async t => {
 	const stream = fn({
