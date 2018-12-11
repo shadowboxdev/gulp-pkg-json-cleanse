@@ -4,7 +4,7 @@ import Vinyl from 'vinyl';
 import pEvent from 'p-event';
 import fn from '.';
 
-const pkgJsonPath = path.resolve(__dirname, 'test-data/package.json');
+const pkgJsonPath = path.resolve(__dirname, 'test-data/package-out.json');
 const pkgJsonData = require(pkgJsonPath);
 const pkgJsonStr = JSON.stringify(pkgJsonData, null, 4);
 
@@ -18,7 +18,7 @@ test(async t => {
 
 	stream.end(new Vinyl({
 		base: __dirname,
-		path: path.join(__dirname, 'package.json'),
+		path: path.join(__dirname, 'test-data/package-in.json'),
 		contents: Buffer.from(pkgJsonStr)
 	}));
 
